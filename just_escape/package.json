@@ -1,0 +1,13 @@
+{
+  "name": "just_escape",
+  "version": "1.0.0",
+  "description": "ez ctf challenge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "vm2": "3.8.3"
+  }
+}

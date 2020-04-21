@@ -1,0 +1,24 @@
+html
+    head
+        title Home
+        link(href="/static/css/bootstrap.min.css", rel="stylesheet",id="bootstrap-css")
+        link(href="/static/css/app.css", rel="stylesheet")
+        script(src="/static/js/bootstrap.min.js")
+        script(src="/static/js/jquery.min.js")
+    body
+        div(class="wrapper fadeInDown")
+            div(id="formContent")
+                div(class="fadeIn first")
+                    h2 Welcome #{username}
+
+                form
+                    input(type="text", id="flag", class="fadeIn second", name="flag", placeholder="The flag will be here...")
+                    br
+                    br
+                    input(type="button", class="fadeIn third", value="Get Flag", onclick="getflag()")
+
+                div(id="formFooter")
+                    a(class="underlineHover", onclick="logout()") 退出当前账号
+        script(src="/static/js/app.js")
+           
+        

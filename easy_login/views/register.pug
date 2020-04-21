@@ -1,0 +1,24 @@
+html
+    head
+        title Register
+        link(href="/static/css/bootstrap.min.css", rel="stylesheet",id="bootstrap-css")
+        link(href="/static/css/app.css", rel="stylesheet")
+        script(src="/static/js/bootstrap.min.js")
+        script(src="/static/js/jquery.min.js")
+    body
+        div(class="wrapper fadeInDown")
+            div(id="formContent")
+                div(class="fadeIn first")
+                    h2 Register
+
+                form
+                    input(type="text", id="username", class="fadeIn second", name="username", placeholder="username")
+                    input(type="text", id="password", class="fadeIn third", name="password", placeholder="password")
+                    br
+                    br
+                    input(type="button", class="fadeIn fourth", value="Register", onclick="register()")
+
+                div(id="formFooter")
+                    a(class="underlineHover",href="/login") 已有账户，直接登录
+
+        script(src="/static/js/app.js")
